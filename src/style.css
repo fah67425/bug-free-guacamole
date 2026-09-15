@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  padding: 2rem 0;
+  min-height: 100vh;
+  background-color: #2a238a;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 100%;
+  background: #c41919;
+  z-index: -1;
+
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    85% 2.5%,
+    100% 5%,
+    85% 7.5%,
+    100% 10%,
+    85% 12.5%,
+    100% 15%,
+    85% 17.5%,
+    100% 20%,
+    85% 22.5%,
+    100% 25%,
+    85% 27.5%,
+    100% 30%,
+    85% 32.5%,
+    100% 35%,
+    85% 37.5%,
+    100% 40%,
+    85% 42.5%,
+    100% 45%,
+    85% 47.5%,
+    100% 50%,
+    85% 52.5%,
+    100% 55%,
+    85% 57.5%,
+    100% 60%,
+    85% 62.5%,
+    100% 65%,
+    85% 67.5%,
+    100% 70%,
+    85% 72.5%,
+    100% 75%,
+    85% 77.5%,
+    100% 80%,
+    85% 82.5%,
+    100% 85%,
+    85% 87.5%,
+    100% 90%,
+    85% 92.5%,
+    100% 95%,
+    0 100%
+  );
+}
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 100%;
+  background: #c41919;
+  z-index: -1;
+
+  clip-path: polygon(
+    100% 0,
+    0 0,
+    15% 2.5%,
+    0 5%,
+    15% 7.5%,
+    0 10%,
+    15% 12.5%,
+    0 15%,
+    15% 17.5%,
+    0 20%,
+    15% 22.5%,
+    0 25%,
+    15% 27.5%,
+    0 30%,
+    15% 32.5%,
+    0 35%,
+    15% 37.5%,
+    0 40%,
+    15% 42.5%,
+    0 45%,
+    15% 47.5%,
+    0 50%,
+    15% 52.5%,
+    0 55%,
+    15% 57.5%,
+    0 60%,
+    15% 62.5%,
+    0 65%,
+    15% 67.5%,
+    0 70%,
+    15% 72.5%,
+    0 75%,
+    15% 77.5%,
+    0 80%,
+    15% 82.5%,
+    0 85%,
+    15% 87.5%,
+    0 90%,
+    15% 92.5%,
+    0 95%,
+    100% 100%
+  );
+}
+
+h1 {
+font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+p{
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+@media (max-width: 600px) {
+  body::before,
+  body::after {
+    display: none;
+  }
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+h1 {
+  -webkit-text-stroke: 1px rgb(25, 172, 44);
+}
+
+#colorPicker {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  
+}
+
+#changeBg {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #222;
+  color: white;
+  cursor: pointer;
+  position: fixed;
+  top: 80px;
+  left: 20px;
+}
+
+#clock {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 150px;
+  padding: 20px;
+  background: #18a84f;
+  color: rgb(62, 18, 165);
+  font-size:large;
+  font-family: "Chelsea Market", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  border-radius: 10px;
+}
